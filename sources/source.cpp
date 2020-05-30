@@ -1,7 +1,6 @@
 // Copyright 2018 Your Name <your_email>
 
 #include <header.hpp>
-#include <iostream>
 void crawler::start(const string &link, unsigned depth,
                     unsigned network_threads, unsigned parser_threads)
 {
@@ -303,8 +302,7 @@ void crawler::output_file(){
         for (auto const &i : output) {
             ofs << i << std::endl;
         }
-    }
-    else
+    } else
     {
         ofs << NO_IMAGES << std::endl;
     }

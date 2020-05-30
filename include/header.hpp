@@ -16,7 +16,6 @@
 #include <vector>
 #include <atomic>
 #include <fstream>
-#include <iostream>
 
 using tcp = boost::asio::ip::tcp;
 namespace ssl = boost::asio::ssl;
@@ -114,7 +113,6 @@ private:
     bool add_link_for_search(const string &link);
 
     bool add_img_to_output(const string &link);
-    
     queue<string> future_storing;
     queue<string> links_to_download;
     vector<string> links_history;

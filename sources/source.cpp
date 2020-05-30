@@ -302,8 +302,7 @@ void crawler::output_file(){
         for (auto const &i : output) {
             ofs << i << std::endl;
         }
-    } else
-    {
+    } else {
         ofs << NO_IMAGES << std::endl;
     }
     ofs.close();
